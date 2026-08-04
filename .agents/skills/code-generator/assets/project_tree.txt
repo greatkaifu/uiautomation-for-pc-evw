@@ -1,0 +1,106 @@
+# 项目目录结构（真实快照）
+
+```
+python-uiautomation-for-pc-evw/
+├── bases/                          # 基础框架层
+│   ├── __init__.py
+│   ├── basePage.py                 # BasePage 基础页面类
+│   ├── captureScreen.py            # 截图工具 (ScreenElement)
+│   └── mouseController.py          # 鼠标控制器 (SlowMouseController)
+├── commons/                        # 公共工具层
+│   ├── __init__.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── browser.py              # 浏览器操作
+│       ├── configmanager.py        # 配置管理器 (ConfigManager)
+│       ├── fileExplorer.py         # 文件管理器操作
+│       ├── file_organizer.py       # 文件整理工具
+│       ├── getProjectRroot.py      # 项目路径获取 (GetPath)
+│       ├── installprogram.py       # 静默安装工具
+│       ├── jsonMd5Comp.py          # JSON MD5 对比
+│       ├── killProcess.py          # 进程终止 (kill_process_by_name)
+│       ├── languageSet.py          # 语言设置 (LanguageSet)
+│       ├── myLogging.py            # 日志工具 (get_logger)
+│       ├── onnxMd5Comp.py          # ONNX MD5 对比
+│       ├── process_helper.py       # 进程辅助
+│       ├── readconfig.py           # INI 配置读取 (INIConfigReader)
+│       ├── readproperties.py       # 属性文件读取
+│       ├── targetNotFoundError.py  # 异常处理 (control_raise, element_raise)
+│       └── taskManager.py          # 任务管理器操作
+├── pom/                            # 页面对象模型 (POM)
+│   ├── __init__.py
+│   ├── voicewave_active.py         # 激活相关
+│   ├── voicewave_closeprogram_page.py  # 关闭程序
+│   ├── voicewave_community_page.py     # 社区音效页
+│   ├── voicewave_discount_alert.py     # 折扣弹窗
+│   ├── voicewave_fast_page.py          # Fast 页面
+│   ├── voicewave_file_voicechanger_page.py  # 文件变声页
+│   ├── voicewave_home_page.py          # 主页面 (VoiceWavePage)
+│   ├── voicewave_language_page.py      # 语言设置页
+│   ├── voicewave_login_page.py         # 登录页
+│   ├── voicewave_setting_page.py       # 设置页
+│   ├── voicewave_soundboard_page.py    # Soundboard 页
+│   └── voicewave_voice_creation_page.py  # 声音克隆页
+├── testcase/                       # 测试用例
+│   ├── __init__.py
+│   ├── test_about.py
+│   ├── test_fast.py
+│   ├── test_inactive.py
+│   ├── test_language.py
+│   ├── test_left_navigation_bar.py
+│   ├── test_login.py
+│   ├── test_nav2_soundboard.py
+│   ├── test_nav3_community.py
+│   ├── test_nav4_file_voice_changer.py
+│   ├── test_nav5_voice_creation.py
+│   ├── test_newuser_start_alert.py
+│   ├── test_olduser_start_alert.py
+│   ├── test_settings.py
+│   ├── test_testing.py
+│   └── test_title.py
+├── resources/                      # 资源文件
+│   ├── images/                     # 图像模板（用于图像识别）
+│   │   ├── bottom/
+│   │   ├── language/
+│   │   ├── nav1_real_time_voice_changer/
+│   │   ├── nav2_soundboard/
+│   │   ├── nav3_community_library/
+│   │   ├── nav4_file_voice_changer/
+│   │   ├── nav5_voice_vreation/
+│   │   ├── nav6_settings/
+│   │   ├── nav7_tutorial/
+│   │   ├── nav8_technical_support/
+│   │   ├── nav_bar/
+│   │   ├── title/
+│   │   ├── title1_active/
+│   │   └── 多语言/
+│   └── testdata/                   # 测试数据
+│       ├── community/
+│       ├── soundboard/
+│       ├── 克隆音频/
+│       ├── 导入多语言路径/
+│       ├── 导出多语言路径/
+│       ├── 支持格式文件/
+│       └── 输出格式文件/
+├── config/
+│   └── config.ini                  # 配置文件（含安装路径）
+├── conftest.py                     # pytest 共享 fixtures
+├── pytest.ini                      # pytest 配置
+├── main.py                         # 入口文件
+└── requirements.txt                # 依赖
+```
+
+## 关键路径映射
+
+| 用途 | 路径 | 说明 |
+|------|------|------|
+| 基础页面类 | `bases/basePage.py` | BasePage，所有 POM 类的父类 |
+| 截图工具 | `bases/captureScreen.py` | ScreenElement，图像识别核心 |
+| 日志工具 | `commons/utils/myLogging.py` | `get_logger()` 统一日志 |
+| 异常处理 | `commons/utils/targetNotFoundError.py` | `control_raise`, `element_raise` |
+| 路径工具 | `commons/utils/getProjectRroot.py` | `GetPath().getProjectRoot()` |
+| 配置读取 | `commons/utils/readconfig.py` | `INIConfigReader().getconfig()` |
+| 配置管理 | `commons/utils/configmanager.py` | `ConfigManager` INI文件修改 |
+| 进程管理 | `commons/utils/killProcess.py` | `kill_process_by_name()` |
+| 图像模板根 | `resources/images/` | 通过 `GetPath().getImagePath()` 获取 |
+| 测试数据根 | `resources/testdata/` | 通过 `GetPath().getProjectRoot()` 拼接 |

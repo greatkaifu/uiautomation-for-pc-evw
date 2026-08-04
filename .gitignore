@@ -1,0 +1,62 @@
+# Python
+# 从 Git 缓存中移除 report 目录（保留本地文件）
+# git rm -r --cached report/
+#
+#提交 .gitignore 和移除操作
+# git add .gitignore
+# git commit -m "Ignore report directory"
+# git push
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.log
+
+# 其他常见忽略项
+.vscode/
+.idea/
+.DS_Store
+.txt
+.config.ini
+# 忽略根目录的 report 目录
+report/
+allure-results/
+language_screenshots/
+logs/
+@AutomationLog.txt
+
+# 忽略音视频文件
+*.aac
+*.AAC
+*.ac3
+*.AC3
+*.avi
+*.AVI
+*.flac
+*.FLAC
+*.flv
+*.FLV
+*.m4a
+*.M4A
+*.mkv
+*.MKV
+*.mov
+*.MOV
+*.mp2
+*.MP2
+*.mp3
+*.MP3
+*.mp4
+*.MP4
+*.ogg
+*.OGG
+*.wav
+*.WAV
+*.wma
+*.WMA
+*.wmv
+*.WMV
+
+#忽略
+总结.md

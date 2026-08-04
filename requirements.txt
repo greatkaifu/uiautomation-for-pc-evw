@@ -1,0 +1,36 @@
+# PC �� UI �Զ�����������
+# ���� Python-UIAutomation-for-Windows + pytest + allure
+
+# === ���� UI �Զ��� ===
+uiautomation==2.0.29
+pyautogui==0.9.54
+pyperclip==1.8.2
+
+# === ͼ������ģ��ƥ�䣩 ===
+opencv-python==4.12.0.88
+numpy==2.2.6
+Pillow==11.1.0
+
+# === Windows ϵͳ���� ===
+WMI==1.5.1
+psutil==7.2.1
+
+# === ���Կ�� ===
+pytest==9.0.2
+pytest-dependency==0.6.1
+pytest-html==4.2.0
+pytest-metadata==3.1.1
+pytest-result-log==1.2.2
+
+# === ���Ա��� ===
+allure-pytest==2.14.0
+allure-python-commons==2.14.0
+
+# === ������Զ��������Բ��Եȳ���ʹ�ã� ===
+selenium==4.41.0
+
+# === SSH Զ�̲��� ===
+paramiko==3.5.1
+
+# === 埋点抓包验证（方案B，mitmproxy 代理捕获） ===
+mitmproxy==11.1.2
