@@ -21,7 +21,6 @@ __pycache__/
 .config.ini
 # 忽略根目录的 report 目录
 report/
-allure-results/
 language_screenshots/
 logs/
 @AutomationLog.txt

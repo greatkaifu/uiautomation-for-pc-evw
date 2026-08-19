@@ -1,0 +1,42 @@
+[33mWARNING [0m pytest_result_log:plugin.py:122 Start: testcase/test_nav3_community.py::TestNav3Community::test_upload_image[\u5165\u529b\u30dc\u30c3\u30af\u30b9\u306e\u6587\u5b57]
+[32mINFO    [0m commons.utils.myLogging:basePage.py:78 窗口已激活: ControlType: WindowControl    ClassName: MainWidget    AutomationId: FramelessWidget    Rect: (498,280,3342,1880)[2844x1600]    Name: EaseUS VoiceWave    Handle: 0xE1C22(924706)
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:203 开始平滑移动鼠标到控件中心: (586, 1030)
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:208 执行鼠标左键按下操作
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:213 执行鼠标左键释放操作
+[32mINFO    [0m commons.utils.myLogging:basePage.py:227 成功执行缓慢点击: Name=N/A, ClassName=N/A, Position=(586,1030), MoveDuration=0.8s, PressDuration=0.3s
+[32mINFO    [0m commons.utils.myLogging:voicewave_home_page.py:201 已点击进入 soundboard 功能。
+[32mINFO    [0m commons.utils.myLogging:captureScreen.py:58 [初始化] 已加载模板: G:\project\python-uiautomation-for-pc-evw\resources\images\nav3_community_library\upload_button.png
+[32mINFO    [0m commons.utils.myLogging:captureScreen.py:124 [Match] 得分: 1.000, 阈值: 0.9
+[32mINFO    [0m commons.utils.myLogging:captureScreen.py:134 [Found] 元素中心坐标: (2287, 465)
+[32mINFO    [0m commons.utils.myLogging:captureScreen.py:188 [Click] 已点击坐标: (2287, 465)
+[32mINFO    [0m commons.utils.myLogging:voicewave_community_page.py:31 已点击uploadsounds 按钮功能。
+[32mINFO    [0m commons.utils.myLogging:basePage.py:78 窗口已激活: ControlType: WindowControl    ClassName: MainWidget    AutomationId: FramelessWidget    Rect: (498,280,3342,1880)[2844x1600]    Name: EaseUS VoiceWave    Handle: 0xE1C22(924706)
+[32mINFO    [0m commons.utils.myLogging:basePage.py:293 控件已经找到: ControlType: EditControl    ClassName: QLineEdit    AutomationId: FramelessWidget.SBWebUploadWidget.widget.widget_3.lineEdit_soundName    Rect: (1956,810,2556,882)[600x72]    Name:     Handle: 0x0(0)
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:203 开始平滑移动鼠标到控件中心: (2256, 846)
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:208 执行鼠标左键按下操作
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:213 执行鼠标左键释放操作
+[32mINFO    [0m commons.utils.myLogging:basePage.py:227 成功执行缓慢点击: Name=N/A, ClassName=QLineEdit, Position=(2256,846), MoveDuration=0.8s, PressDuration=0.3s
+[32mINFO    [0m commons.utils.myLogging:voicewave_community_page.py:80 已填写sounds name。
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:203 开始平滑移动鼠标到控件中心: (2580, 654)
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:208 执行鼠标左键按下操作
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:213 执行鼠标左键释放操作
+[32mINFO    [0m commons.utils.myLogging:basePage.py:227 成功执行缓慢点击: Name=N/A, ClassName=QPushButton, Position=(2580,654), MoveDuration=0.8s, PressDuration=0.3s
+[32mINFO    [0m commons.utils.myLogging:captureScreen.py:58 [初始化] 已加载模板: G:\project\python-uiautomation-for-pc-evw\resources\images\nav3_community_library\upload_button.png
+[32mINFO    [0m commons.utils.myLogging:captureScreen.py:124 [Match] 得分: 1.000, 阈值: 0.9
+[32mINFO    [0m commons.utils.myLogging:captureScreen.py:134 [Found] 元素中心坐标: (2287, 465)
+[32mINFO    [0m commons.utils.myLogging:captureScreen.py:188 [Click] 已点击坐标: (2287, 465)
+[32mINFO    [0m commons.utils.myLogging:voicewave_community_page.py:31 已点击uploadsounds 按钮功能。
+[32mINFO    [0m commons.utils.myLogging:basePage.py:78 窗口已激活: ControlType: WindowControl    ClassName: MainWidget    AutomationId: FramelessWidget    Rect: (498,280,3342,1880)[2844x1600]    Name: EaseUS VoiceWave    Handle: 0xE1C22(924706)
+[32mINFO    [0m commons.utils.myLogging:basePage.py:293 控件已经找到: ControlType: EditControl    ClassName: QLineEdit    AutomationId: FramelessWidget.SBWebUploadWidget.widget.widget_3.lineEdit_soundName    Rect: (1956,810,2556,882)[600x72]    Name:     Handle: 0x0(0)
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:203 开始平滑移动鼠标到控件中心: (2256, 846)
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:208 执行鼠标左键按下操作
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:213 执行鼠标左键释放操作
+[32mINFO    [0m commons.utils.myLogging:basePage.py:227 成功执行缓慢点击: Name=N/A, ClassName=QLineEdit, Position=(2256,846), MoveDuration=0.8s, PressDuration=0.3s
+[32mINFO    [0m commons.utils.myLogging:basePage.py:894 ===复制的文字为：入力ボックスの文字
+[32mINFO    [0m commons.utils.myLogging:test_nav3_community.py:186 ===复制的文字为：入力ボックスの文字
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:203 开始平滑移动鼠标到控件中心: (2580, 654)
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:208 执行鼠标左键按下操作
+[35mDEBUG   [0m commons.utils.myLogging:basePage.py:213 执行鼠标左键释放操作
+[32mINFO    [0m commons.utils.myLogging:basePage.py:227 成功执行缓慢点击: Name=N/A, ClassName=QPushButton, Position=(2580,654), MoveDuration=0.8s, PressDuration=0.3s
+[32mINFO    [0m commons.utils.myLogging:test_nav3_community.py:190 ===输入音效名称成功！
+[33mWARNING [0m pytest_result_log:plugin.py:128 End: testcase/test_nav3_community.py::TestNav3Community::test_upload_image[\u5165\u529b\u30dc\u30c3\u30af\u30b9\u306e\u6587\u5b57]
